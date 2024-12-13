@@ -10,4 +10,5 @@ export function PostContextProvider({ children }) {
     const apiUrl = import.meta.env.VITE_URL;
     function fecthPosts() {
         fetch(apiUrl)
+            .then((res) => res.json())
     }

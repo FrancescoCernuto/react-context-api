@@ -6,4 +6,6 @@ const PostContext = createContext();
 export const usePostContext = () => useContext(PostContext);
 
 // Provider
-export function PostContextProvider({ children })
+export function PostContextProvider({ children }) {
+    const apiUrl = import.meta.env.VITE_URL;
+}

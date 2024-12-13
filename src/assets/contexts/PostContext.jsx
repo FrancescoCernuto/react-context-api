@@ -16,3 +16,7 @@ export function PostContextProvider({ children }) {
     const [postsData, setPostsData] = useState({
         posts: [],
     });
+
+    useEffect(() => {
+        fecthPosts();
+    }, []);

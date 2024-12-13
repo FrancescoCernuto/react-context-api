@@ -13,3 +13,6 @@ export function PostContextProvider({ children }) {
             .then((res) => res.json())
             .then((data) => setPostsData({ ...postsData, posts: data }));
     }
+    const [postsData, setPostsData] = useState({
+        posts: [],
+    });

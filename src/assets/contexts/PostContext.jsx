@@ -11,4 +11,5 @@ export function PostContextProvider({ children }) {
     function fecthPosts() {
         fetch(apiUrl)
             .then((res) => res.json())
+            .then((data) => setPostsData({ ...postsData, posts: data }));
     }
